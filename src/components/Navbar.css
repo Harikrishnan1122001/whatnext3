@@ -1,0 +1,92 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 24px 0;
+  transition: padding 0.35s var(--ease), background 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.navbar--scrolled {
+  padding: 13px 0;
+  background: rgba(10, 10, 12, 0.82);
+  backdrop-filter: blur(16px);
+  border-bottom-color: var(--c-line);
+}
+.navbar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.navbar__brand { display: flex; align-items: center; }
+.navbar__logo {
+  height: 46px;
+  width: auto;
+  transition: height 0.35s var(--ease);
+  filter: drop-shadow(0 0 14px rgba(255, 31, 61, 0.35));
+}
+.navbar--scrolled .navbar__logo { height: 34px; }
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-weight: 600;
+  font-size: 13.5px;
+  letter-spacing: 0.02em;
+}
+.navbar__links a {
+  position: relative;
+  color: var(--c-mut);
+  padding: 4px 0;
+  transition: color 0.25s ease;
+}
+.navbar__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: var(--c-red);
+  box-shadow: 0 0 8px var(--c-red);
+  transition: width 0.3s var(--ease);
+}
+.navbar__links a:hover { color: var(--c-white); }
+.navbar__links a:hover::after { width: 100%; }
+
+.navbar__cta { display: flex; align-items: center; gap: 10px; }
+.navbar__cta-mobile { display: none; }
+.navbar__burger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--c-white);
+  padding: 6px;
+}
+
+@media (max-width: 880px) {
+  .navbar__cta { display: none; }
+  .navbar__burger { display: inline-flex; }
+  .navbar__links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(80vw, 320px);
+    background: var(--c-bg-2);
+    border-left: 1px solid var(--c-line);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px;
+    transform: translateX(100%);
+    transition: transform 0.4s var(--ease);
+  }
+  .navbar__links--open { transform: translateX(0); }
+  .navbar__links a { font-size: 19px; }
+  .navbar__cta-mobile { display: flex; gap: 10px; margin-top: 10px; }
+}

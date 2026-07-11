@@ -1,0 +1,176 @@
+/* ───────────────────────────────────────────────────────────
+   DESIGN TOKENS — What Next (v2)
+   A dark, editorial, poster-driven redesign. Near-black canvas,
+   one live-wire red, oversized condensed display type, diagonal
+   section cuts, and a glowing "Direction Path" that threads the
+   page — the visual reading of "Rise with the right direction".
+─────────────────────────────────────────────────────────────*/
+:root {
+  --c-bg: #0a0a0c;
+  --c-bg-2: #120608;
+  --c-panel: #161212;
+  --c-panel-2: #1c1416;
+  --c-red: #ff1f3d;
+  --c-red-hot: #ff5468;
+  --c-red-deep: #7a0716;
+  --c-white: #ffffff;
+  --c-ivory: #fff3f2;
+  --c-mut: rgba(255, 243, 242, 0.62);
+  --c-mut-40: rgba(255, 243, 242, 0.38);
+  --c-line: rgba(255, 243, 242, 0.12);
+  --c-glow: 0 0 0 1px rgba(255, 31, 61, 0.35), 0 0 40px rgba(255, 31, 61, 0.25);
+
+  --f-display: "Bebas Neue", "Poppins", sans-serif;
+  --f-body: "Inter", "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", "Courier New", monospace;
+
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 26px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --container: 1200px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--f-body);
+  color: var(--c-ivory);
+  background: var(--c-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--f-display);
+  margin: 0;
+  letter-spacing: 0.01em;
+  line-height: 0.98;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+ul { margin: 0; padding: 0; list-style: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-red-hot);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 1.5px;
+  background: var(--c-red);
+  display: inline-block;
+}
+
+section { position: relative; }
+
+#courses, #how-it-works, #why-us, #enquire {
+  scroll-margin-top: 84px;
+}
+
+/* ── Scroll-reveal primitives ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+  will-change: transform, opacity;
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-5 { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 15px 26px;
+  border-radius: 999px;
+  border: none;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.25s ease, border-color 0.25s ease;
+  white-space: nowrap;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--c-red);
+  color: var(--c-white);
+  box-shadow: 0 0 0 1px rgba(255, 31, 61, 0.4), 0 16px 40px rgba(255, 31, 61, 0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: var(--c-red-hot);
+  box-shadow: 0 0 0 1px rgba(255, 84, 104, 0.6), 0 20px 50px rgba(255, 31, 61, 0.45);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--c-ivory);
+  border: 1.5px solid rgba(255, 243, 242, 0.28);
+}
+.btn-outline:hover {
+  border-color: var(--c-red-hot);
+  color: var(--c-red-hot);
+}
+.btn-ghost-red {
+  background: rgba(255, 31, 61, 0.12);
+  color: var(--c-red-hot);
+  border: 1px solid rgba(255, 31, 61, 0.3);
+}
+.btn-ghost-red:hover { background: rgba(255, 31, 61, 0.22); }
+.btn-sm { padding: 11px 20px; font-size: 13px; }
+
+.section-head { max-width: 640px; margin-bottom: 60px; }
+.section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+.section-head h2 {
+  font-size: clamp(38px, 6vw, 68px);
+  margin-top: 16px;
+  color: var(--c-white);
+}
+.section-head p {
+  margin-top: 18px;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--c-mut);
+  text-transform: none;
+  font-family: var(--f-body);
+}
