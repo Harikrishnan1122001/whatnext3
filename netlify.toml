@@ -1,2 +1,3 @@
-[build.environment]
-  NODE_VERSION = "18"
+[build]
+command = "chmod +x node_modules/.bin/* && npm run build"
+publish = "build"
