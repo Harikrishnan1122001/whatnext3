@@ -11,7 +11,7 @@
 }
 .ascent-line__track {
   fill: none;
-  stroke: rgba(255, 243, 242, 0.08);
+  stroke: rgba(0, 0, 0, 0.08);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-dasharray: 2 10;
@@ -21,13 +21,12 @@
   stroke: var(--c-red);
   stroke-width: 2.5;
   stroke-linecap: round;
-  filter: drop-shadow(0 0 8px rgba(255, 31, 61, 0.85));
+  filter: none;
   transition: stroke-dashoffset 0.1s linear;
 }
 .ascent-line__halo {
-  fill: rgba(255, 31, 61, 0.16);
+  fill: rgba(0, 0, 0, 0.06);
 }
 .ascent-line__arrow {
-  fill: var(--c-red-hot);
-  filter: drop-shadow(0 0 6px rgba(255, 84, 104, 0.9));
+  fill: var(--c-red);
 }

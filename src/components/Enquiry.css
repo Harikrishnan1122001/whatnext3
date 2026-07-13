@@ -1,5 +1,5 @@
 .enquiry {
-  background: radial-gradient(900px 500px at 15% 0%, rgba(255, 31, 61, 0.16), transparent 60%), var(--c-bg);
+  background: radial-gradient(900px 500px at 15% 0%, rgba(250, 250, 250, 0.964), transparent 60%), var(--c-bg);
   padding: 100px 0;
 }
 .enquiry__inner {
@@ -40,7 +40,7 @@
   transition: border-color 0.3s ease, transform 0.3s var(--ease);
 }
 .enquiry__direct-item:hover {
-  border-color: rgba(255, 31, 61, 0.45);
+  border-color: rgb(255, 255, 255);
   transform: translateY(-3px);
 }
 .enquiry__direct-icon {
@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 0 20px rgba(255, 31, 61, 0.45);
+  box-shadow: 0 0 20px rgb(246, 244, 245);
 }
 .enquiry__direct-item div { display: flex; flex-direction: column; }
 .enquiry__direct-item strong { font-size: 14px; color: var(--c-white); }

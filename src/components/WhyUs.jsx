@@ -4,10 +4,10 @@ import useScrollReveal from "../hooks/useScrollReveal";
 import "./WhyUs.css";
 
 const STATS = [
-  { value: "10", label: "career tracks" },
-  { value: "1:15", label: "mentor to student ratio" },
-  { value: "100%", label: "live, no recordings" },
-  { value: "6", label: "batches running weekly" },
+  { value: "500+", label: "students mentored" },
+  { value: "4.8/5", label: "average batch rating" },
+  { value: "95%", label: "doubt-clearing within 24hrs" },
+  { value: "12+", label: "industry mentors" },
 ];
 
 const FEATURES = [

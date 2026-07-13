@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: radial-gradient(1100px 700px at 78% -8%, rgba(255, 31, 61, 0.22), transparent 60%), var(--c-bg);
+  background: var(--c-bg);
   padding: 170px 0 110px;
   overflow: hidden;
 }
@@ -8,21 +8,14 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 243, 242, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 243, 242, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.045) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: linear-gradient(180deg, black, transparent 85%);
   pointer-events: none;
 }
 .hero__beam {
-  position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 60%;
-  height: 140%;
-  background: linear-gradient(120deg, transparent 40%, rgba(255, 31, 61, 0.12) 50%, transparent 60%);
-  filter: blur(20px);
-  pointer-events: none;
+  display: none;
 }
 .hero__inner {
   position: relative;
@@ -52,7 +45,7 @@
   height: 7px;
   border-radius: 50%;
   background: var(--c-red);
-  box-shadow: 0 0 10px var(--c-red);
+  box-shadow: none;
   animation: dotPulse 1.8s ease-in-out infinite;
 }
 @keyframes dotPulse {
@@ -62,13 +55,14 @@
 
 .hero__title {
   font-size: clamp(56px, 8.6vw, 118px);
-  color: var(--c-white);
+  color: var(--c-ivory);
+  font-weight: 700;
   animation: heroFadeUp 0.9s var(--ease) both;
   animation-delay: 0.08s;
 }
 .hero__title-accent {
   color: var(--c-red);
-  text-shadow: 0 0 46px rgba(255, 31, 61, 0.55);
+  text-shadow: none;
 }
 
 .hero__sub {
@@ -107,14 +101,15 @@
 .hero__stats strong {
   font-family: var(--f-display);
   font-size: 30px;
-  color: var(--c-white);
+  font-weight: 700;
+  color: var(--c-ivory);
 }
 .hero__stats span {
   font-family: var(--f-mono);
   font-size: 11px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--c-mut-40);
+  color: var(--c-gray);
 }
 
 @keyframes heroFadeUp {
@@ -144,7 +139,7 @@
 .hero__ring--inner {
   width: 240px;
   height: 240px;
-  border-color: rgba(255, 31, 61, 0.25);
+  border-color: var(--c-line);
 }
 .hero__orbit {
   position: absolute;
@@ -163,14 +158,14 @@
   margin-left: -21px;
   margin-top: -21px;
   border-radius: 12px;
-  background: var(--c-panel);
+  background: #ffffff;
   border: 1px solid var(--c-line);
-  color: var(--c-red-hot);
+  color: var(--c-ivory);
   display: flex;
   align-items: center;
   justify-content: center;
   animation: orbitCounter 26s linear infinite;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: none;
 }
 @keyframes orbitSpin {
   from { transform: rotate(0deg); }
@@ -184,7 +179,7 @@
   position: relative;
   height: 74px;
   width: auto;
-  filter: drop-shadow(0 0 30px rgba(255, 31, 61, 0.45));
+  filter: none;
 }
 
 @media (max-width: 900px) {
