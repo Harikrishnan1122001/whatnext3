@@ -6,19 +6,19 @@
    page — the visual reading of "Rise with the right direction".
 ─────────────────────────────────────────────────────────────*/
 :root {
-  --c-bg: #0a0a0c;
-  --c-bg-2: #120608;
-  --c-panel: #161212;
-  --c-panel-2: #1c1416;
+  --c-bg: #ffffff;
+  --c-bg-2: #fff6f6;
+  --c-panel: #f7efef;
+  --c-panel-2: #f0e4e4;
   --c-red: #ff1f3d;
   --c-red-hot: #ff5468;
   --c-red-deep: #7a0716;
-  --c-white: #ffffff;
-  --c-ivory: #fff3f2;
-  --c-mut: rgba(255, 243, 242, 0.62);
-  --c-mut-40: rgba(255, 243, 242, 0.38);
-  --c-line: rgba(255, 243, 242, 0.12);
-  --c-glow: 0 0 0 1px rgba(255, 31, 61, 0.35), 0 0 40px rgba(255, 31, 61, 0.25);
+  --c-white: #0a0a0c;
+  --c-ivory: #1c1416;
+  --c-mut: rgba(20, 10, 10, 0.62);
+  --c-mut-40: rgba(20, 10, 10, 0.38);
+  --c-line: rgba(20, 10, 10, 0.12);
+  --c-glow: 0 0 0 1px rgba(255, 31, 61, 0.35), 0 0 40px rgba(255, 31, 61, 0.15);
 
   --f-display: "Bebas Neue", "Poppins", sans-serif;
   --f-body: "Inter", "Segoe UI", sans-serif;
