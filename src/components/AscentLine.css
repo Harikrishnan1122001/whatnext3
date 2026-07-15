@@ -18,7 +18,7 @@
 }
 .ascent-line__draw {
   fill: none;
-  stroke: var(--c-red);
+  stroke: var(--c-teal);
   stroke-width: 2.5;
   stroke-linecap: round;
   filter: none;
@@ -28,5 +28,5 @@
   fill: rgba(0, 0, 0, 0.06);
 }
 .ascent-line__arrow {
-  fill: var(--c-red);
+  fill: var(--c-teal);
 }

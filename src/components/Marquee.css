@@ -22,7 +22,7 @@
   white-space: nowrap;
 }
 .marquee__dot {
-  color: var(--c-red);
+  color: var(--c-teal);
   font-size: 9px;
 }
 @keyframes marqueeScroll {

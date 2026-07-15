@@ -6,7 +6,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: var(--c-red);
+  background: var(--c-teal);
   color: #000;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 2px solid var(--c-red);
+  border: 2px solid var(--c-teal);
   animation: fabPing 2.4s ease-out infinite;
 }
 @keyframes fabPing {

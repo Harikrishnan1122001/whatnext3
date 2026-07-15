@@ -7,11 +7,11 @@
 :root {
   --c-bg: #ffffff;
   --c-bg-2: #ffffff;
-  --c-panel: #fdecec;
-  --c-panel-2: #fbd9da;
-  --c-red: #e0293f;
-  --c-red-hot: #ff4a5e;
-  --c-red-deep: #9c0e1c;
+  --c-panel: #eaf4f2;
+  --c-panel-2: #d3e9e5;
+  --c-teal: #3f8f8c;
+  --c-teal-hot: #5fbb95;
+  --c-teal-deep: #0f4e5f;
   --c-white: #1b1a1a;
   --c-ivory: #000000;
   --c-mut: rgba(0, 0, 0, 0.62);
@@ -71,7 +71,7 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--c-red);
+  color: var(--c-teal);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -80,7 +80,7 @@ img { max-width: 100%; display: block; }
   content: "";
   width: 26px;
   height: 1.5px;
-  background: var(--c-red);
+  background: var(--c-teal);
   display: inline-block;
 }
 
@@ -133,13 +133,13 @@ section { position: relative; }
 .btn:active { transform: scale(0.97); }
 
 .btn-primary {
-  background: var(--c-red);
+  background: var(--c-teal);
   color: var(--c-white);
   box-shadow: none;
 }
 .btn-primary:hover {
   transform: translateY(-3px);
-  background: var(--c-red-hot);
+  background: var(--c-teal-hot);
   box-shadow: none;
 }
 .btn-outline {
@@ -148,15 +148,15 @@ section { position: relative; }
   border: 1.5px solid rgba(0, 0, 0, 0.2);
 }
 .btn-outline:hover {
-  border-color: var(--c-red);
-  color: var(--c-red);
+  border-color: var(--c-teal);
+  color: var(--c-teal);
 }
-.btn-ghost-red {
+.btn-ghost-teal {
   background: var(--c-panel);
-  color: var(--c-red-deep);
-  border: 1px solid rgba(224, 41, 63, 0.25);
+  color: var(--c-teal-deep);
+  border: 1px solid rgba(63, 143, 140, 0.25);
 }
-.btn-ghost-red:hover { background: var(--c-panel-2); }
+.btn-ghost-teal:hover { background: var(--c-panel-2); }
 .btn-sm { padding: 11px 20px; font-size: 13px; }
 
 .section-head { max-width: 640px; margin-bottom: 60px; }
@@ -235,7 +235,7 @@ h1, h2, h3, h4,
   align-items: center;
   gap: 3px;
 }
-.logo span { color: var(--c-red); }
+.logo span { color: var(--c-teal); }
 .nav-links {
   display: flex;
   align-items: center;
@@ -252,7 +252,7 @@ h1, h2, h3, h4,
   border-bottom: 1.5px solid transparent;
   transition: border-color 0.25s ease, color 0.25s ease;
 }
-.nav-links a:hover { color: var(--c-red); border-color: var(--c-red); }
+.nav-links a:hover { color: var(--c-teal); border-color: var(--c-teal); }
 .nav-cta { display: flex; align-items: center; gap: 14px; }
 .nav-toggle {
   display: none;
@@ -278,7 +278,7 @@ h1, h2, h3, h4,
   font-size: clamp(52px, 7.4vw, 96px);
   margin-top: 18px;
 }
-.hero h1 .accent { color: var(--c-red); }
+.hero h1 .accent { color: var(--c-teal); }
 .hero-lede {
   margin-top: 24px;
   font-size: 18px;
@@ -340,13 +340,13 @@ h1, h2, h3, h4,
   color: var(--c-mut);
 }
 .panel-line { color: var(--c-mut); }
-.panel-line .kw { color: var(--c-red); font-weight: 600; }
+.panel-line .kw { color: var(--c-teal); font-weight: 600; }
 .panel-line .fn { color: var(--c-ivory); font-weight: 700; }
 .panel-line .out { color: var(--c-ivory); font-weight: 700; }
 .panel-cursor {
   display: inline-block;
   width: 8px; height: 15px;
-  background: var(--c-red);
+  background: var(--c-teal);
   vertical-align: -2px;
   margin-left: 2px;
   animation: blink 1.1s steps(2) infinite;
@@ -372,7 +372,7 @@ h1, h2, h3, h4,
   color: var(--c-mut);
 }
 .strip-track span { white-space: nowrap; }
-.strip-track b { color: var(--c-red); font-weight: 700; }
+.strip-track b { color: var(--c-teal); font-weight: 700; }
 @keyframes scroll-left {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -400,7 +400,7 @@ h1, h2, h3, h4,
   font-family: var(--f-mono);
   font-size: 12px;
   letter-spacing: 0.08em;
-  color: var(--c-red-deep);
+  color: var(--c-teal-deep);
 }
 .course-card h3 {
   font-size: 30px;
@@ -423,14 +423,14 @@ h1, h2, h3, h4,
   font-size: 11.5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--c-red-deep);
+  color: var(--c-teal-deep);
 }
 
 /* Solid red boxes — reserved specifically for Python course cards.
    Black text throughout for contrast; no shadow, no glow. */
 .course-card.is-python {
-  background: var(--c-red);
-  border: 1px solid var(--c-red-deep);
+  background: var(--c-teal);
+  border: 1px solid var(--c-teal-deep);
 }
 .course-card.is-python .course-index { color: #000; opacity: 0.72; }
 .course-card.is-python h3 { color: #000; }
@@ -484,7 +484,7 @@ h1, h2, h3, h4,
   font-family: var(--f-display);
   font-size: 52px;
   color: var(--c-panel-2);
-  -webkit-text-stroke: 1.5px var(--c-red);
+  -webkit-text-stroke: 1.5px var(--c-teal);
 }
 .step h4 {
   font-size: 21px;
@@ -513,9 +513,9 @@ h1, h2, h3, h4,
   width: 42px; height: 42px;
   border-radius: 10px;
   background: var(--c-white);
-  border: 1.5px solid var(--c-red);
+  border: 1.5px solid var(--c-teal);
   display: flex; align-items: center; justify-content: center;
-  color: var(--c-red);
+  color: var(--c-teal);
   font-family: var(--f-mono);
   font-weight: 700;
   font-size: 15px;
@@ -544,7 +544,7 @@ h1, h2, h3, h4,
   overflow: hidden;
 }
 .enquire-info {
-  background: var(--c-red);
+  background: var(--c-teal);
   padding: 52px 44px;
   color: #000;
 }
@@ -589,7 +589,7 @@ h1, h2, h3, h4,
 }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: none;
-  border-color: var(--c-red);
+  border-color: var(--c-teal);
 }
 .field textarea { resize: vertical; min-height: 90px; }
 .form-note {
@@ -619,7 +619,7 @@ h1, h2, h3, h4,
   text-transform: uppercase;
   color: var(--c-mut);
 }
-.footer-links a:hover { color: var(--c-red); }
+.footer-links a:hover { color: var(--c-teal); }
 .footer-copy {
   font-family: var(--f-mono);
   font-size: 11.5px;

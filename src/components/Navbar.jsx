@@ -39,14 +39,14 @@ export default function Navbar() {
           ))}
           <div className="navbar__cta-mobile">
             <a
-              className="btn btn-solid-red btn-sm"
+              className="btn btn-solid-teal btn-sm"
               href={buildWhatsAppLink()}
               target="_blank"
               rel="noreferrer"
             >
               <MessageCircle size={16} /> WhatsApp
             </a>
-            <a className="btn btn-ghost-red btn-sm" href={`tel:${PHONE_TEL}`}>
+            <a className="btn btn-ghost-teal btn-sm" href={`tel:${PHONE_TEL}`}>
               <Phone size={16} /> Call
             </a>
           </div>
@@ -54,14 +54,14 @@ export default function Navbar() {
 
         <div className="navbar__cta">
           <a
-            className="btn btn-ghost-red btn-sm"
+            className="btn btn-ghost-teal btn-sm"
             href={`tel:${PHONE_TEL}`}
             aria-label="Call What Next"
           >
             <Phone size={16} /> Call
           </a>
           <a
-            className="btn btn-solid-red btn-sm"
+            className="btn btn-solid-teal btn-sm"
             href={buildWhatsAppLink()}
             target="_blank"
             rel="noreferrer"

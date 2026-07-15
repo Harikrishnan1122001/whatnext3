@@ -24,8 +24,8 @@
 .why__stat-value {
   font-family: var(--f-display);
   font-size: clamp(32px, 3.4vw, 44px);
-  color: var(--c-red-hot);
-  text-shadow: 0 0 24px rgba(255, 31, 61, 0.35);
+  color: var(--c-teal-hot);
+  text-shadow: 0 0 24px rgba(95, 187, 149, 0.35);
 }
 .why__stat-label {
   font-family: var(--f-mono);
@@ -49,12 +49,12 @@
   border: 1px solid var(--c-line);
   border-radius: var(--radius-m);
   padding: 24px 22px;
-  color: var(--c-red-hot);
+  color: var(--c-teal-hot);
   background: var(--c-panel);
   transition: border-color 0.3s ease, transform 0.3s var(--ease);
 }
 .why__card:hover {
-  border-color: rgba(255, 31, 61, 0.4);
+  border-color: rgba(95, 187, 149, 0.4);
   transform: translateY(-4px);
 }
 .why__card h3 {

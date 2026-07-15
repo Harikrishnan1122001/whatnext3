@@ -44,7 +44,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--c-red);
+  background: var(--c-teal);
   box-shadow: none;
   animation: dotPulse 1.8s ease-in-out infinite;
 }
@@ -61,7 +61,7 @@
   animation-delay: 0.08s;
 }
 .hero__title-accent {
-  color: var(--c-red);
+  color: var(--c-teal);
   text-shadow: none;
 }
 
@@ -177,7 +177,7 @@
 }
 .hero__logo {
   position: relative;
-  height: 74px;
+  height: 54px;
   width: auto;
   filter: none;
 }

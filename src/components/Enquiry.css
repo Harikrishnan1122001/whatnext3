@@ -47,7 +47,7 @@
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: var(--c-red);
+  background: var(--c-teal);
   color: var(--c-white);
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@
 }
 .enquiry__field input::placeholder { color: var(--c-mut-40); }
 .enquiry__field input:focus,
-.enquiry__field select:focus { border-color: var(--c-red); }
+.enquiry__field select:focus { border-color: var(--c-teal); }
 .enquiry__field select option { background: var(--c-bg-2); color: var(--c-white); }
 .enquiry__submit { width: 100%; margin-top: 4px; }
 .enquiry__note {
