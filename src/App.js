@@ -8,6 +8,7 @@ import WhyUs from "./components/WhyUs";
 import Enquiry from "./components/Enquiry";
 import Footer from "./components/Footer";
 import WhatsAppFab from "./components/WhatsAppFab";
+import Faq from "./components/Faq ";
 
 export default function App() {
   return (
@@ -19,7 +20,9 @@ export default function App() {
         <Courses />
         <HowItWorks />
         <WhyUs />
+        <Faq />
         <Enquiry />
+        
       </main>
       <Footer />
       <WhatsAppFab />

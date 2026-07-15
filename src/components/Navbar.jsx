@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, MessageCircle, Phone } from "lucide-react";
 import logo from "../assets/logo.png";
-import { buildWhatsAppLink, PHONE_TEL } from "../siteConfig";
+import { buildWhatsAppLink, PHONE_TEL } from "./Siteconfig";
 import "./Navbar.css";
 
 const LINKS = [

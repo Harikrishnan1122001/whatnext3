@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageCircle } from "lucide-react";
-import { buildWhatsAppLink } from "../siteConfig";
+import { buildWhatsAppLink } from "./Siteconfig";
 import "./WhatsAppFab.css";
 
 export default function WhatsAppFab() {

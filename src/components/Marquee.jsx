@@ -1,5 +1,5 @@
 import React from "react";
-import { COURSES } from "../siteConfig";
+import { COURSES } from "./Siteconfig";
 import "./Marquee.css";
 
 export default function Marquee() {
